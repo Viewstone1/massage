@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Klee One", cursive;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sidebar {
+  max-width: 1295px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-phone {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  text-decoration: none;
+}
+.contacts-link {
+  padding: 0 5px;
+}
+
+.main {
+  background-color: #4fbfa5;
+}
+
+.navbar {
+  max-width: 1295px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+.navbar-item {
+  margin: 0 33px;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 5px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-link:hover {
+  color: #00868a;
+}
+
+.button-sign-up {
+  margin-left: 33px;
+  width: 175px;
+  height: 40px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.button-sign-up:hover {
+  background-color: #00868a;
+  color: #fff;
+}

@@ -74,3 +74,120 @@ body {
   background-color: #00868a;
   color: #fff;
 }
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-info {
+  color: #fff;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.main-text {
+  padding-top: 20px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+}
+.button-info {
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  background-color: #00868a;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-info:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.button-info-link {
+  padding-top: 40px;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.main-photo {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.anchors {
+  display: flex;
+  justify-content: center;
+}
+
+.button-anchor {
+  font-size: 21px;
+  line-height: 31px;
+  color: #fff;
+  background-color: #00868a;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 24px 102px;
+}
+
+.button-anchor:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.button-middle {
+  background-color: #4fbfa5;
+}
+
+.innovation-aesthetic {
+  display: flex;
+}
+.innovation {
+  background-color: #00868a;
+}
+.stickers {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  background-color: #4fbfa5;
+  padding: 15px 10px;
+  width: 150px;
+  margin-left: 55px;
+  text-align: center;
+}
+
+.innovation-title {
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+}
+
+.button-arrow {
+  color: #fff;
+  background-color: #00868a;
+  border: none;
+  border-radius: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}

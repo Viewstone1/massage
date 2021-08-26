@@ -6,11 +6,13 @@ body {
   font-family: "Klee One", cursive;
 }
 
+/* хедер начало */
+
 .header {
   padding: 20px 0;
 }
 .sidebar {
-  max-width: 1295px;
+  max-width: 1920px;
   margin: 0 300px;
   display: flex;
   justify-content: space-between;
@@ -26,12 +28,16 @@ body {
   padding: 0 10px;
 }
 
+/* хедер конец */
+
+/* мейн начало */
+
 .main {
   background-color: #4fbfa5;
 }
 
 .navbar {
-  max-width: 1295px;
+  max-width: 1920px;
   margin: 0 300px;
   display: flex;
   justify-content: flex-end;
@@ -164,6 +170,9 @@ body {
   background-color: #4fbfa5;
 }
 
+/* мэйн конец */
+/* блок инновации и эстетическая красоты начало */
+
 .innovation-aesthetic {
   display: flex;
   justify-content: space-between;
@@ -172,8 +181,10 @@ body {
   background-color: #00868a;
   margin-left: 300px;
   margin-top: 80px;
+  margin-bottom: 80px;
   width: 530px;
   height: 580px;
+  max-width: 1920px;
 }
 .stickers {
   font-size: 18px;
@@ -224,6 +235,7 @@ body {
 .aesthetic {
   margin-right: 300px;
   margin-top: 115px;
+  margin-bottom: 80px;
   background-image: url(../img/сert/сertificate21.jpg);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -257,10 +269,143 @@ body {
   line-height: 42px;
 }
 
-.result-box {
+/* блок инновации и эстетическая красоты конец */
+/* блок результатов начало */
+
+.results {
+}
+
+#results {
+  margin: 35px;
+}
+
+.result-block {
   margin: 0 300px;
 }
-.result-links {
+
+.result-title {
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #00868a;
 }
-.instagram-media {
+
+.result-boxes {
+  display: flex;
+  justify-content: space-between;
 }
+
+.result-box {
+  /* border: 8px solid #00868a; */
+}
+
+/* блок результатов конец */
+
+/* блок спецпредложений начало */
+
+.offers {
+  background-color: #4fbfa5;
+}
+
+.offer-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 72px;
+  color: #fff;
+  margin: 60px 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 300px;
+}
+
+.offer-box {
+  background-color: #00868a;
+  margin-bottom: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-info-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.box-info-arrow svg {
+  margin-left: 15px;
+}
+
+.box-info {
+  font-size: 21px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.offer-link {
+  text-decoration: none;
+}
+
+.box-title {
+  height: 70%;
+  background-image: url(../img/massage-img-background/background-image1.jpg);
+  padding-bottom: 115px;
+}
+
+.box-image-2 {
+  height: 70%;
+  padding-bottom: 115px;
+  background-image: url(../img/massage-img-background/background-image2.jpg);
+}
+.box-image-3 {
+  background-image: url(../img/massage-img-background/background-image3.jpg);
+  height: 70%;
+  padding-bottom: 115px;
+}
+.box-image-4 {
+  background-image: url(../img/massage-img-background/background-image4.jpg);
+  height: 70%;
+  padding-bottom: 115px;
+}
+
+/* блок результатов конец */
+
+/* футер начало */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 300px;
+}
+.footer-about {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  cursor: pointer;
+  max-width: 1920px;
+}
+
+.footer-about:hover {
+  text-decoration: underline;
+  color: #00868a;
+}
+.footer-politic {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  cursor: pointer;
+}
+
+.footer-politic:hover {
+  text-decoration: underline;
+  color: #00868a;
+}
+
+/* блок результатов конец */

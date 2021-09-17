@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <title>Flower Massage</title>
   </head>
   <body>
@@ -59,7 +63,7 @@
               <li class="navbar-item">
                 <a href="" class="navbar-link">Контакты</a>
               </li>
-              <a href="">
+              <a href="#" class="button-sign-up-link sign-up-open">
                 <button class="button-sign-up">Запись на прием</button>
               </a>
             </ul>
@@ -70,13 +74,12 @@
         <div class="main-info">
           <h3 class="main-title">Фейспластика</h3>
           <p class="main-text">
-            Cкульптурно-буккальный массаж лица <br />
-            Мануальное моделирование лица <br />
+            Cкульптурно-буккальный <br> массаж лица <br />
+            Мануальное моделирование <br> лица <br />
             Ручная пластика лица <br />
           </p>
-          <a href="" class="button-info-link"
-            ><button class="button-info">Подробнее</button></a
-          >
+          <a href="#" class="button-info-link is-open">
+            <button class="button-info">Подробнее</button></a>
         </div>
         <div class="main-image">
           <img
@@ -111,7 +114,7 @@
           Используются уникальные массажные техники, <br />
           которые относятся к восточной медицине
         </h2>
-        <a href="" class="arrow-button-link"
+        <a href="#" class="arrow-button-link action"
           ><button class="arrow-button">
             <svg
               class="arrow-icon"
@@ -169,20 +172,33 @@
         <div>
           <h2 class="result-title">Результаты наших клиентов</h2>
         </div>
-        <div class="result-boxes">
-          <div class="result-box">
-            <img src="./img/result-img/result-1.jpg" alt="result:1" class="result-img">
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-1.jpg" alt="result-1">
+            </div>
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-2.jpg" alt="result-2">
+            </div>
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-3.jpg" alt="result-3">
+            </div>
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-4.jpg" alt="result-4">
+            </div>
           </div>
-          <div>
-            <img src="./img/result-img/result-2.jpg" alt="result:2" class="result-box">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+            <svg width="60" height="50" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45.3536 25.3536C45.5488 25.1583 45.5488 24.8417 45.3536 24.6464L42.1716 21.4645C41.9763 21.2692 41.6597 21.2692 41.4645 21.4645C41.2692 21.6597 41.2692 21.9763 41.4645 22.1716L44.2929 25L41.4645 27.8284C41.2692 28.0237 41.2692 28.3403 41.4645 28.5355C41.6597 28.7308 41.9763 28.7308 42.1716 28.5355L45.3536 25.3536ZM15 25.5L45 25.5V24.5L15 24.5V25.5Z" fill="white"/>
+            <rect x="0.5" y="0.5" width="59" height="49" stroke="white"/>
+          </svg>
+
           </div>
-          <div class="result-box">
-            <img src="./img/result-img/result-3.jpg" alt="result:3" class="result-img">
-          </div>
-          <div class="result-box">
-            <img src="./img/result-img/result-4.jpg" alt="result:4" class="result-img">
-          </div>
-        </div>
+      </div>
       </div>
     </div>
     <div class="offers">
@@ -333,5 +349,92 @@
         /></a>
       </div>
     </footer>
+    <div class="popups">
+        <div id="popup-info-1" class="popup-info-1">
+          <a href="#anchor" class="popup-area"></a>
+          <div class="popup-body">
+            <div class="popup-content">
+          <a class="popup-close" href="#anchor"
+            ><img src="./img/close.svg" alt="icon: close" class="close-img"
+          /></a>
+            <div class="content-text-img">
+              <div class="popup-content-text">
+                <ul>
+                  <li class="info-list">Каждому из нас хочется сохранить свою <span class="popup-text-color">красоту, молодость и здоровье.</span></li>
+                  <li class="info-list"><span class="popup-text-color">Массаж</span> не случайно называют пассивной гимнастикой. С помощью массажа лица, шеи, декольте можно расслабить напряженные мышцы и привести в тонус ослабленные.</li>
+                  <li class="info-list">На сегодняшний день <span class="popup-text-color">скульптурно-буккальный массаж </span> считают одной из самых эффективных процедур по подтяжке мышц лиц, то есть специалист исполняет роль скульптора.</li>
+                  <li class="info-list"><span class="popup-text-color">Скульптурный массаж лица</span> - вид ручного, глубокотканного массажа. Это полная проработка, лепка, подтяжка и укрепление мышц лица, шеи, декольте.</li>
+                  <li class="info-list"><span class="popup-text-color">Буккальный массаж</span> - работа с мышцами лица изнутри(через рот).</li>
+                  <li class="info-list"><span class="popup-text-color">Скульптурно-буккальный массаж лица также называют:</span></li>
+                                 <ul class="popup-info-list">
+                                    <li><span class="popup-text-color">Мануальное моделирование лица</span></li>
+                                    <li><span class="popup-text-color">Ручная пластика лица</span></li>
+                                    <li><span class="popup-text-color">Фейспластика</span></li>
+                                </ul>
+                  <li class="info-list">В ходе процедуры <span class="popup-text-color">прорабатывается вся мышечная ткань</span> лица, шеи, грудной клетки.</li>
+                </ul>
+              </div>
+              <div class="popup-images">
+                <div class="popup-img-box">
+                  <img src="./img/massage/photo-3.jpg" alt="" class="popup-img">
+                </div>
+                <div class="popup-img-box">
+                  <img src="./img/massage/photo-4.jpg" alt="" class="popup-img">
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div id="popup-info-2" class="popup-info-2">
+          <a href="#anchor" class="popup-area-2"></a>
+          <div class="popup-body-2">
+            <div class="popup-content-2">
+                <a class="popup-close" href="#anchor"
+                  ><img src="./img/close.svg" alt="icon: close" class="close-img"
+                /></a>
+                <p>У нас используется несколько уникальных техник массажа:</p>
+                <ul class="popup-info-list">
+                  <li><span class="popup-text-color">Асахи</span></li>
+                  <li><span class="popup-text-color">Шиацу</span></li>
+                  <li><span class="popup-text-color">Тибетская</span></li>
+                  <li><span class="popup-text-color">Японская</span></li>
+                  <li><span class="popup-text-color">Французская</span></li>
+                  <li><span class="popup-text-color">Израильская</span></li>
+                </ul>
+                <h2><span class="popup-text-color">В итоге</span></h2>
+                  <ul>
+                    <li class="eventually-list">Мышцы лица укрепляются, лицо становится более подтянутым, контуры лица - четкими, восстанавливается и укрепляется правильный объем.</li>
+                    <li class="eventually-list">Происходит стимуляция лимфосистемы(лимфодреннаж). В результате убирается отечность, уходят мешки под глазами.</li>
+                    <li class="eventually-list">За счет усиленного кровообращения происходит глубокий прогрев, стимулируется выработка коллагена и эластина. Улучшается плотность, упругость, тонус кожи, а также укрепляются сосуды и улучшается кровообращение.</li>
+                    <li class="eventually-list">За счет огромного количества активных точек, идет работа с энергетикой, что очень полезно для здоровья.</li>
+                  </ul>
+                  <p><span class="popup-text-color">Идеально подходит тем, кто боится травматичных методов для сохранения молодости и красоты. Кто ищет альтернативу инъекциям и пластическим операциям.</span></p>
+             </div>
+            </div>
+        </div>
+        <div id="popup-sign-up" class="popup-sign-up">
+          <a href="#anchor" class="popup-area-3"></a>
+          <div class="popup-body-3">
+            <div class="popup-content-3">
+                <a class="popup-close" href="#anchor"
+                  ><img src="./img/close.svg" alt="icon: close" class="close-img"
+                /></a>
+                <h3>Запись на прием</h3>
+                <p>Отправьте заявку и мы свяжемся с Вами в ближайшее время</p>
+                <form class="form-sign-up" action="./php/send.php" method="POST">
+                  <input class="input-sign-up" type="text" name="name" placeholder="Ваше имя" required>
+                  <input class="input-sign-up" type="text" name="phone" placeholder="Ваш телефон" required>
+                  <input class="input-sign-up" type="text" name="comment" placeholder="Комментарий">
+                  <input class="input-sign-up" type="submit" value="Оставить заявку">
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/slider.js"></script> -->
+    <script src="./js/popup.js"></script>
   </body> 
 </html>

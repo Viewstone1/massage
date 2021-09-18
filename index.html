@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.ico" />
     <title>Flower Massage</title>
   </head>
   <body>
@@ -52,16 +53,16 @@
     <main class="main">
       <div class="navbar">
         <nav class="navbar-nav">
-          <div id="menu">
+          <div id="menu" class="">
             <ul class="navbar-menu">
               <li class="navbar-item">
-                <a href="" class="navbar-link">Косметология</a>
+                <a href="#" class="navbar-link-cosmetology is-open-cosmetology">Косметология</a>
               </li>
               <li class="navbar-item">
-                <a href="" class="navbar-link">Массаж</a>
+                <a href="#" class="navbar-link-massage is-open-massage">Массаж</a>
               </li>
               <li class="navbar-item">
-                <a href="" class="navbar-link">Контакты</a>
+                <a href="#" class="navbar-link-contacts is-open-contacts">Контакты</a>
               </li>
               <a href="#" class="button-sign-up-link sign-up-open">
                 <button class="button-sign-up">Запись на прием</button>
@@ -162,43 +163,6 @@
           Сертификаты <br />
           и другие документы
         </h3>
-      </div>
-    </div>
-    <div class="results">
-      <div class="result-block">
-        <div>
-          <h3 class="stickers" id="results">Результат</h3>
-        </div>
-        <div>
-          <h2 class="result-title">Результаты наших клиентов</h2>
-        </div>
-        <div class="swiper">
-        <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img class="image-slider image-slider__image" src="./img/result-img/result-1.jpg" alt="result-1">
-            </div>
-            <div class="swiper-slide">
-              <img class="image-slider image-slider__image" src="./img/result-img/result-2.jpg" alt="result-2">
-            </div>
-            <div class="swiper-slide">
-              <img class="image-slider image-slider__image" src="./img/result-img/result-3.jpg" alt="result-3">
-            </div>
-            <div class="swiper-slide">
-              <img class="image-slider image-slider__image" src="./img/result-img/result-4.jpg" alt="result-4">
-            </div>
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next">
-            <svg width="60" height="50" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M45.3536 25.3536C45.5488 25.1583 45.5488 24.8417 45.3536 24.6464L42.1716 21.4645C41.9763 21.2692 41.6597 21.2692 41.4645 21.4645C41.2692 21.6597 41.2692 21.9763 41.4645 22.1716L44.2929 25L41.4645 27.8284C41.2692 28.0237 41.2692 28.3403 41.4645 28.5355C41.6597 28.7308 41.9763 28.7308 42.1716 28.5355L45.3536 25.3536ZM15 25.5L45 25.5V24.5L15 24.5V25.5Z" fill="white"/>
-            <rect x="0.5" y="0.5" width="59" height="49" stroke="white"/>
-          </svg>
-
-          </div>
-      </div>
       </div>
     </div>
     <div class="offers">
@@ -318,6 +282,43 @@
         </div>
       </div>
     </div>
+    <div class="results">
+      <div class="result-block">
+        <div>
+          <h3 class="stickers" id="results">Результат</h3>
+        </div>
+        <div>
+          <h2 class="result-title">Результаты наших клиентов</h2>
+        </div>
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-1.jpg" alt="result-1">
+            </div>
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-2.jpg" alt="result-2">
+            </div>
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-3.jpg" alt="result-3">
+            </div>
+            <div class="swiper-slide">
+              <img class="image-slider image-slider__image" src="./img/result-img/result-4.jpg" alt="result-4">
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+            <svg width="60" height="50" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45.3536 25.3536C45.5488 25.1583 45.5488 24.8417 45.3536 24.6464L42.1716 21.4645C41.9763 21.2692 41.6597 21.2692 41.4645 21.4645C41.2692 21.6597 41.2692 21.9763 41.4645 22.1716L44.2929 25L41.4645 27.8284C41.2692 28.0237 41.2692 28.3403 41.4645 28.5355C41.6597 28.7308 41.9763 28.7308 42.1716 28.5355L45.3536 25.3536ZM15 25.5L45 25.5V24.5L15 24.5V25.5Z" fill="white"/>
+            <rect x="0.5" y="0.5" width="59" height="49" stroke="white"/>
+          </svg>
+
+          </div>
+      </div>
+      </div>
+    </div>
     <footer class="footer">
       <div>
         <p><a href="" class="footer-about">
@@ -414,9 +415,9 @@
             </div>
         </div>
         <div id="popup-sign-up" class="popup-sign-up">
-          <a href="#anchor" class="popup-area-3"></a>
-          <div class="popup-body-3">
-            <div class="popup-content-3">
+          <a href="#anchor" class="popup-area-sign-up"></a>
+          <div class="popup-body-sign-up">
+            <div class="popup-content-sign-up">
                 <a class="popup-close" href="#anchor"
                   ><img src="./img/close.svg" alt="icon: close" class="close-img"
                 /></a>
@@ -431,10 +432,89 @@
             </div>
           </div>
         </div>
+        <div id="popup-contacts" class="popup-contacts">
+          <a href="#anchor" class="popup-area-contacts"></a>
+          <div class="popup-body-contacts">
+            <div class="popup-content-contacts">
+                <a class="popup-close" href="#anchor"
+                  ><img src="./img/close.svg" alt="icon: close" class="close-img"
+                /></a>
+                <h2>Связаться с нами можно здесь:</h2>
+                <div class="popup-phone">
+                  <a class="popup-phone-link" href="tel:+79689556471">8 (968) 955-64-71</a>
+                </div>
+                <div class="popup-email">
+                  <span>Адрес для обратной связи: <a class="popup-email-link" href="elsa34@mail.ru">elsa34@mail.ru</a></span>
+                </div>
+                <div>
+                      <a
+                        class="contacts-link"
+                        href="https://www.instagram.com/kosmetolog_natalya_ov/"
+                        ><img src="./img/instagram.png" alt="instagram"
+                      /></a>
+                      <a
+                        class="contacts-link"
+                        href="https://zen.yandex.ru/id/5e9eeb5f4365d108b6cf9177"
+                        ><img src="./img/zen.png" alt="zen"
+                      /></a>
+                      <a class="contacts-link" href="https://t.me/NATALY_KOSMO"
+                        ><img src="./img/telegram.png" alt="telegram"
+                      /></a>
+                      <a
+                      class="contacts-link"
+                      href="https://www.youtube.com/channel/UCDev7aqW8ThJGYkNooW5C5A"
+                      ><img src="./img/youtube.png" alt="youtube"
+                    /></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="popup-massage" class="popup-massage">
+          <a href="#anchor" class="popup-area-massage"></a>
+          <div class="popup-body-massage">
+            <div class="popup-content-massage">
+                <a class="popup-close" href="#anchor"
+                  ><img src="./img/close.svg" alt="icon: close" class="close-img"
+                /></a>
+                <p>Практически каждая женщина знакома с расслабляющим действием массажа, но иногда девушки забывают, что массировать нужно не только тело, но и лицо. С возрастом кожа начинает обвисать, мышцы от напряжения укорачиваются, что приводит к образованию складочек и морщин. Избежать этого можно с помощью правильного массирования, регулярного фейс-билдинга и правильно подобранной уходовой косметики.</p>
+                <p>Массаж лица дает следующий эффект:</p>
+                <ul>
+                  <li>Предотвращает появление морщин и уменьшает их выраженность;</li>
+                  <li>Улучшает тургор кожи, делает дерму более эластичной и подтянутой;</li>
+                  <li>Убирает брыли и второй подбородок;</li>
+                  <li>Устраняет отечность;</li>
+                  <li>Улучшает цвет лица за счет нормализации кровообращения;</li>
+                  <li>Усиливает регенерацию.</li>
+                </ul>
+                <p>На лице расположены биологически активные точки, при стимуляции которых можно улучшить работу внутренних органов.</p>
+                <p>Благодаря массажу кожа будет лучше впитывать уходовые средства. Если обменные процессы в дерме нарушены, даже самые дорогие кремы не дадут желаемого эффекта. Массаж позволяет активизировать эти процессы, улучшить кровообращение, усилить насыщение тканей кислородом.</p>
+            </div>
+          </div>
+        </div>
+        <div id="popup-cosmetology" class="popup-cosmetology">
+          <a href="#anchor" class="popup-area-cosmetology"></a>
+          <div class="popup-body-cosmetology">
+            <div class="popup-content-cosmetology">
+                <a class="popup-close" href="#anchor"
+                  ><img src="./img/close.svg" alt="icon: close" class="close-img"
+                /></a>
+                <h2>Эстетическая косметология</h2>
+                <p>Существует также эстетическая косметология, виды услуг которой направлены на решение проблем, не угрожающих здоровью клиента и не требующих вмешательства врача. Данные методики помогут избавиться от различных незначительных внешних дефектов, доставляющих человеку эмоциональный дискомфорт и развивающих комплексы.</p>
+                <p>Достоинства эстетического вида косметологии:</p>
+                <ul>
+                  <li>Быстрый, заметный и долгосрочный эффект.</li>
+                  <li>Индивидуальный подход к каждому клиенту.</li>
+                  <li>Видимый результат при коррекции внешних недостатков.</li>
+                  <li>Избавление клиентов от неуверенности в себе и комплексов.</li>
+                  <li>Возможность избежать хирургических вмешательств.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- <script src="./js/slider.js"></script> -->
+    <script src="./js/slider.js"></script>
     <script src="./js/popup.js"></script>
   </body> 
 </html>

@@ -3,6 +3,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 10,
   direction: "horizontal",
   loop: true,
+  centeredSlides: true,
 
   // Navigation arrows
   navigation: {

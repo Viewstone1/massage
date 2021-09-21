@@ -33,6 +33,11 @@ $(".popup-area-sign-up").on("click", function () {
   $(".popup-sign-up").removeClass("sign-up-open");
 });
 
+$(".button-sign-up-link").on("click", function () {
+  // запись на прием футер
+  $(".popup-sign-up").addClass("sign-up-open");
+});
+
 // Контакты
 $(".navbar-link-contacts").on("click", function () {
   $(".popup-contacts").addClass("is-open-contacts");
@@ -64,4 +69,15 @@ $(".popup-close img").on("click", function () {
 });
 $(".popup-area-cosmetology").on("click", function () {
   $(".popup-cosmetology").removeClass("is-open-cosmetology");
+});
+
+// Предложение 1
+$(".offer-link-cosm").on("click", function () {
+  $(".popup-offer-1").addClass("is-open-offer-1");
+});
+$(".popup-close img").on("click", function () {
+  $(".popup-offer-1").removeClass("is-open-offer-1");
+});
+$(".popup-area-offer-1").on("click", function () {
+  $(".popup-offer-1").removeClass("is-open-offer-1");
 });

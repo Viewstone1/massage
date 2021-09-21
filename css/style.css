@@ -9,7 +9,6 @@ body {
 /* хедер начало */
 
 .header {
-  padding: 20px 0;
 }
 .sidebar {
   max-width: 1920px;
@@ -24,6 +23,12 @@ body {
   color: #000;
   text-decoration: none;
 }
+
+.sidebar-phone:hover {
+  color: #00868a;
+  text-decoration: underline;
+}
+
 .contacts-link {
   padding: 0 10px;
 }
@@ -306,8 +311,7 @@ body {
 }
 
 .image-slider {
-  justify-content: center;
-  align-items: center;
+  display: flex;
 }
 
 .image-slider__image {
@@ -315,14 +319,27 @@ body {
 
 .image-slider__image img {
   max-width: 100%;
+  align-items: center;
 }
 
 .swiper-slide {
+  display: flex;
   justify-content: space-around;
 }
 .swiper-button-prev {
 }
+
+.swiper-button-prev:after {
+  color: #00868a;
+  font-weight: 700;
+}
+
 .swiper-button-next {
+}
+
+.swiper-button-next:after {
+  color: #00868a;
+  font-weight: 700;
 }
 
 /* .result-boxes {
@@ -340,6 +357,8 @@ body {
 
 .offers {
   background-color: #4fbfa5;
+  padding-top: 60px;
+  margin-top: 100px;
 }
 
 .offer-title {
@@ -347,7 +366,7 @@ body {
   font-size: 48px;
   line-height: 72px;
   color: #fff;
-  margin: 60px 0;
+  padding-bottom: 60px;
 }
 
 .boxes {
@@ -359,7 +378,7 @@ body {
 .offer-box {
   background-color: #00868a;
   margin-bottom: 100px;
-  width: 300px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
 }
@@ -381,11 +400,22 @@ body {
   color: #fff;
 }
 
-.offer-link {
+.offer-link-cosm,
+.offer-link-mass,
+.offer-link-pirs,
+.offer-link-tatu {
   text-decoration: none;
+  padding-top: 0;
 }
 
 .box-title {
+}
+
+.box-title h3 {
+  margin: 10px 0 40px 10px;
+}
+
+.box-image-1 {
   height: 70%;
   background-image: url(../img/massage-img-background/background-image1.jpg);
   padding-bottom: 115px;
@@ -412,12 +442,87 @@ body {
 /* футер начало */
 
 .footer {
+}
+
+.footer-column {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 300px 80px 300px;
+}
+
+.footer-column h2 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 31px;
+  margin: 10px 0;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.footer-column a:hover {
+  color: #00868a;
+  text-decoration: underline;
+}
+
+.footer-column p {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.5;
+}
+
+.column-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-contact {
+  font-size: 21px;
+  line-height: 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-sign-up-footer {
+  width: 175px;
+  height: 40px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: #00868a;
+  color: #fff;
+}
+
+.button-sign-up-footer:hover {
+  background-color: #4fbfa5;
+  color: #000;
+}
+
+/* футер конец */
+
+/* последняя линия начало */
+
+.last-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 300px;
 }
-.footer-about {
+.last-line-about {
   text-decoration: none;
   font-size: 12px;
   line-height: 18px;
@@ -426,11 +531,11 @@ body {
   max-width: 1920px;
 }
 
-.footer-about:hover {
+.last-line-about:hover {
   text-decoration: underline;
   color: #00868a;
 }
-.footer-politic {
+.last-line-politic {
   text-decoration: none;
   font-size: 12px;
   line-height: 18px;
@@ -438,12 +543,12 @@ body {
   cursor: pointer;
 }
 
-.footer-politic:hover {
+.last-line-politic:hover {
   text-decoration: underline;
   color: #00868a;
 }
 
-/* блок результатов конец */
+/*  последняя линия конец */
 
 /* модальные окна */
 /* Подробнее - 1 */
@@ -484,7 +589,7 @@ body {
   background-color: #fff;
   color: #4fbfa5;
   max-width: 800px;
-  padding: 30px;
+  /* padding: 30px; */
   flex-grow: 1;
   display: flex;
 }
@@ -509,10 +614,18 @@ body {
 
 .popup-content-text {
   text-align: justify;
-  margin: 0 20px 0 10px;
 }
 
-.info-list {
+.popup-content-ul {
+  list-style: none;
+  padding: 40px;
+}
+
+.popup-content-text li {
+  margin-bottom: 10px;
+}
+
+.popup-body-content.info-list {
   list-style: none;
   margin-bottom: 10px;
 }
@@ -525,14 +638,14 @@ body {
 }
 
 .popup-img {
-  max-width: 400px;
-  padding-right: 10px;
-  justify-content: space-around;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 
 .popup-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .popup-img-box {
@@ -601,6 +714,13 @@ body {
 
 .popup-content-2 {
   text-align: center;
+}
+
+.popup-info-list-2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .eventually-list {
@@ -692,6 +812,11 @@ body {
   border: 1px solid #00868a;
   padding: 15px 25px;
   color: #00868a;
+}
+
+[type="submit"] {
+  background-color: #00868a;
+  color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -842,6 +967,28 @@ body {
   align-items: center;
 }
 
+.popup-massage-img-text {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.popup-massage-img-text img {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.popup-massage-img-text li {
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.popup-massage-text {
+  display: grid;
+  align-content: space-around;
+  margin-left: 10px;
+}
+
 /* Navbar косметология */
 
 .popup-cosmetology {
@@ -877,6 +1024,73 @@ body {
   padding: 10px 30px;
 }
 .popup-content-cosmetology {
+  position: relative;
+  background-color: #fff;
+  color: #4fbfa5;
+  max-width: 800px;
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
+}
+
+.popup-cosmetology-img-text {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.popup-cosmetology-img-text img {
+  margin-right: 10px;
+}
+
+.popup-cosmetology-img-text li {
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.popup-cosmetology-text {
+  display: grid;
+  align-content: space-around;
+}
+
+/* Спецпредложения - 1 - косметология */
+
+.popup-offer-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+
+.popup-offer-1.is-open-offer-1 {
+  display: flex;
+}
+
+.popup-area-offer-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup-body-offer-1 {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+}
+.popup-content-offer-1 {
   position: relative;
   background-color: #fff;
   color: #4fbfa5;

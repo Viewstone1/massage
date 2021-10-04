@@ -6,13 +6,24 @@ body {
   font-family: "Klee One", cursive;
 }
 
+.container {
+  display: flex;
+  /* flex: 10; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 300px;
+}
+
 /* хедер начало */
 
 .header {
-}
-.sidebar {
   max-width: 1920px;
   margin: 0 300px;
+}
+.sidebar {
+  /* width: 1920px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,17 +50,16 @@ body {
 
 .main {
   background-color: #4fbfa5;
+  width: 1920px;
 }
 
 .navbar {
-  max-width: 1920px;
-  margin: 0 300px;
+  max-width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .navbar-menu {
-  width: 100%;
   margin: 30px 0;
   list-style: none;
   display: flex;
@@ -59,7 +69,7 @@ body {
 .navbar-item {
   margin: 0 33px;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 21px;
   padding-top: 5px;
 }
 .navbar-link-cosmetology,
@@ -91,7 +101,7 @@ body {
 
 .main-content {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 .main-info {
   color: #fff;
@@ -100,6 +110,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 300px;
+  justify-content: space-evenly;
 }
 .main-title {
   font-size: 48px;
@@ -186,6 +197,7 @@ body {
 .innovation-aesthetic {
   display: flex;
   justify-content: space-between;
+  width: 1920px;
 }
 .innovation {
   background-color: #00868a;
@@ -194,7 +206,6 @@ body {
   margin-bottom: 80px;
   width: 530px;
   height: 580px;
-  max-width: 1920px;
 }
 .stickers {
   font-size: 18px;
@@ -246,7 +257,7 @@ body {
   margin-right: 300px;
   margin-top: 115px;
   margin-bottom: 80px;
-  background-image: url(../img/сert/сertificate21.jpg);
+  background-image: url(../img/сert/сertificate_01.jpg);
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -359,6 +370,7 @@ body {
   background-color: #4fbfa5;
   padding-top: 60px;
   margin-top: 100px;
+  width: 1920px;
 }
 
 .offer-title {
@@ -1056,6 +1068,20 @@ body {
   align-content: space-around;
 }
 
+.popup-content-cosmetology ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popup-content-cosmetology li {
+  color: #00868a;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 8px 0 8px 0;
+  text-align: center;
+}
+
 /* Спецпредложения - 1 - косметология */
 
 .popup-offer-1 {
@@ -1101,4 +1127,46 @@ body {
   flex-direction: column;
   text-align: justify;
   align-items: center;
+}
+
+/* Price */
+
+.container-price {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 1920px; */
+}
+
+.container-price h1 {
+  font-size: 48px;
+  line-height: 72px;
+  color: #00868a;
+  text-align: center;
+}
+.container-price table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00868a;
+  color: #fff;
+  border-collapse: collapse;
+  padding: 5px 0;
+}
+
+.container-price th,
+td:first-child {
+  background: #00868a;
+  color: white;
+  padding: 10px 20px;
+}
+.container-price th,
+td {
+  border: 1px solid white;
+}
+.container-price td {
+  background: #4fbfa5;
+}
+.container-price th:first-child,
+td:first-child {
+  text-align: left;
 }

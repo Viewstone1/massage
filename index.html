@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -20,105 +17,103 @@
     <title>Flower Massage</title>
   </head>
   <body>
-    <header class="header">
+      <header class="header container">
       <div class="sidebar">
-        <a href="./index.html" class="logo-link">
-          <img src="./img/flower_logo_blue 1.png" alt="icon: logo" />
+        <div class="sidebar__phone">
+        <a href="./index.html" class="sidebar__logo-link">
+          <img src="./img/logo-img/flower_logo_blue 1.png" alt="icon: logo" class="sidebar__logo-img"/>
         </a>
-        <div class="sidebar-contacts">
-          <a class="sidebar-phone" href="tel:+79689556471">8 (968) 955-64-71</a>
+            <a class="sidebar__phone-link" href="tel:+79689556471">8 (968) 955-64-71</a>
         </div>
-        <div>
+        <div class="sidebar__social-contacts">
           <a
-            class="contacts-link"
+            class="sidebar__social-contacts-link"
             href="https://www.instagram.com/kosmetolog_natalya_ov/"
-            ><img src="./img/instagram.png" alt="instagram"
+            ><img src="./img/instagram.png" alt="instagram" class="sidebar__social-contacts-img"
           /></a>
           <a
-            class="contacts-link"
+            class="sidebar__social-contacts-link"
             href="https://zen.yandex.ru/id/5e9eeb5f4365d108b6cf9177"
-            ><img src="./img/zen.png" alt="zen"
+            ><img src="./img/zen.png" alt="zen" class="sidebar__social-contacts-img"
           /></a>
-          <a class="contacts-link" href="https://t.me/NATALY_KOSMO"
-            ><img src="./img/telegram.png" alt="telegram"
+          <a class="sidebar__social-contacts-link" href="https://t.me/NATALY_KOSMO"
+            ><img src="./img/telegram.png" alt="telegram" class="sidebar__social-contacts-img"
           /></a>
           <a
-            class="contacts-link"
+            class="sidebar__social-contacts-link"
             href="https://www.youtube.com/channel/UCDev7aqW8ThJGYkNooW5C5A"
-            ><img src="./img/youtube.png" alt="youtube"
+            ><img src="./img/youtube.png" alt="youtube" class="sidebar__social-contacts-img"
           /></a>
         </div>
       </div>
       </header>
-    <div class="container">
-      
-      <main class="main">
-      <div class="navbar">
-        <nav class="navbar-nav">
-          <div id="menu" class="">
-            <ul class="navbar-menu">
-              <li class="navbar-item">
+      <main class="main container">
+      <div class="main__body container">
+        <nav class="main__navbar">
+          <div id="menu" class="main__navbar-menu">
+            <ul class="main__navbar-menu-list">
+              <li class="main__navbar-menu-item">
                 <a href="#" class="navbar-link-cosmetology is-open-cosmetology">Косметология</a>
               </li>
-              <li class="navbar-item">
+              <li class="main__navbar-menu-item">
                 <a href="#" class="navbar-link-massage is-open-massage">Массаж</a>
               </li>
-              <li class="navbar-item">
+              <li class="main__navbar-menu-item">
                 <a href="#" class="navbar-link-contacts is-open-contacts">Контакты</a>
               </li>
-              <a href="#" class="button-sign-up-link sign-up-open">
-                <button class="button-sign-up">Запись на прием</button>
-              </a>
             </ul>
+            <a href="#" class="button-sign-up-link sign-up-open">
+                  <button class="button-sign-up">Запись на прием</button>
+            </a>
           </div>
         </nav>
-      </div>
-      <div class="main-content">
-        <div class="main-info">
-          <h3 class="main-title">Фейспластика</h3>
-          <p class="main-text">
-            Cкульптурно-буккальный <br> массаж лица <br />
-            Мануальное моделирование <br> лица <br />
+      <div class="main__content">
+        <div class="content-info">
+          <h3 class="content-info__title">Фейспластика</h3>
+          <p class="content-info__text">
+            Мануальное моделирование лица <br />
             Ручная пластика лица <br />
+            Cкульптурно-буккальный <br> массаж лица <br />
           </p>
-          <a href="#" class="button-info-link is-open">
-            <button class="button-info">Подробнее</button></a>
+          <a href="#" class="content-info__button-info-link is-open">
+            <button class="content-info__button-info">Подробнее</button></a>
         </div>
-        <div class="main-image">
+        <div class="content-info__photo">
           <img
             src="./img/massage/photo-1.jpg"
             alt="massage:photo1"
-            class="main-photo"
+            class="content-info__main-img"
           />
         </div>
       </div>
       <div class="anchors">
-        <div class="buttons-box">
+        <div class="anchors__buttons-box">
           <a href="#offer"
-            ><button class="button-anchor">Актуальные предложения</button></a
+            ><button class="anchors__button-anchor">Актуальные предложения</button></a
           >
         </div>
-        <div class="buttons-box">
+        <div class="anchors__buttons-box">
           <a href="#results"
-            ><button class="button-anchor button-middle">Результат работы</button></a
+            ><button class="anchors__button-anchor anchors__button-middle">Результат работы</button></a
           >
         </div>
-        <div class="buttons-box">
+        <div class="anchors__buttons-box">
           <a href="#aesthetic"
-            ><button class="button-anchor">Эстетика красоты</button></a
+            ><button class="anchors__button-anchor">Эстетика красоты</button></a
           >
         </div>
       </div>
+      </div>
       </main>
-      <div class="innovation-aesthetic">
+      <section class="innovation-aesthetic container">
       <div class="innovation">
         <h3 class="stickers" id="innovation">Инновации</h3>
-        <h2 class="innovation-title">
-          Используются уникальные массажные техники, <br />
+        <h2 class="innovation__title">
+          Используются уникальные массажные техники,
           которые относятся к восточной медицине
         </h2>
-        <a href="#" class="arrow-button-link action"
-          ><button class="arrow-button">
+        <a href="#" class="innovation__arrow-button-link action"
+          ><button class="innovation__arrow-button">
             <svg
               class="arrow-icon"
               width="50"
@@ -133,48 +128,47 @@
               />
               <rect x="0.5" y="0.5" width="49" height="39" stroke="white" />
             </svg>
-            <span class="arrow-button-text">Подробнее</span>
+            <span class="innovation__arrow-button-text">Подробнее</span>
           </button></a
         >
-        <img
-          src="./img/massage/photo-2.jpg"
-          alt="massage:photo2"
-          class="innovation-img"
-        />
+        <div class="innovation__photo">
+          <img
+            src="./img/massage/photo-2.jpg"
+            alt="massage:photo2"
+            class="innovation__img"
+          />
+        </div>
       </div>
       <div class="aesthetic">
         <h3 class="stickers" id="aesthetic">Эстетика красоты</h3>
-        <h3 class="aesthetic-opacity">
+        <h3 class="aesthetic__title-opacity">
           Опытный специалист <br />
           в Москве
         </h3>
-        <h3 class="aesthetic-opacity">
+        <h3 class="aesthetic__title-opacity">
           Большое количество <br />
           техник и методик
         </h3>
-        <div class="after-image">
-          <h2 class="aesthetic-title">
-            <span class="big-ten">10</span>
-            <span class="span-title"
+        <div class="aesthetic__front-title">
+          <h2 class="aesthetic__title">
+            <span class="aesthetic__big-ten">10</span>
+            <span class="aesthetic__span-title"
               >лет в области <br />
               косметологии</span
             >
           </h2>
         </div>
-        <h3 class="aesthetic-opacity">
+        <h3 class="aesthetic__title-opacity">
           Сертификаты <br />
           и другие документы
         </h3>
       </div>
-      </div>
-      <div class="results">
-      <div class="result-block">
-        <div>
+    </section>
+      <section class="results container">
+      <div class="result__block-body">
+         <div class="result__block">
           <h3 class="stickers" id="results">Результат</h3>
-        </div>
-        <div>
-          <h2 class="result-title">Результаты наших клиентов</h2>
-        </div>
+          <h2 class="result__title">Результаты наших клиентов</h2>
         <div class="swiper">
         <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -201,24 +195,27 @@
           </svg>
 
           </div>
+        </div>
+         </div>
       </div>
-      </div>
-      </div>
-      <div class="offers">
-        <h2 class="offer-title" id="offer">Актуальные спецпредложения</h2>
-        <div class="boxes">
-              <div class="offer-box">
-                  <div class="box-title box-image-1">
+    </section>
+    <section class="offers container">
+      <div class="offers__block-body">
+          <div class="offers__block">
+            <h2 class="offer__title" id="offer">Актуальные спецпредложения</h2>
+        <div class="offer__boxes-body">
+              <div class="offer__box">
+                  <div class="offer__box-title offer__box-image-1">
                     <h3 class="stickers">Косметология</h3>
                   </div>
-                  <div class="box-info-arrow">
+                  <div class="offer__box-info-arrow">
                     <div>
-                      <a href="price.html" class="offer-link-cosm">
-                      <p class="box-info">Ультразвуковая чистка, уходы</p>
+                      <a href="price.html" class="offer__link-cosm">
+                      <p class="offer__box-info">Ультразвуковая чистка, уходы</p>
                     </div>
                     <div>
                       <svg
-                        class="arrow-icon"
+                        class="offer__arrow-icon"
                         width="50"
                         height="40"
                         viewBox="0 0 50 40"
@@ -235,18 +232,18 @@
                   </div>
                 </div>
               </div>
-              <div class="offer-box">
-                <div class="box-title box-image-2">
+              <div class="offer__box">
+                <div class="offer__box-title offer__box-image-2">
                     <h3 class="stickers">Массаж</h3>
                 </div>
-                <div class="box-info-arrow">
+                <div class="offer__box-info-arrow">
                   <div>
-                    <a href="./price.html" class="offer-link-mass">
-                    <p class="box-info">Массаж лица <br> и тела</p>
+                    <a href="./price.html" class="offer__link-mass">
+                    <p class="offer__box-info">Массаж лица <br> и тела</p>
                   </div>
                   <div>
                     <svg
-                  class="arrow-icon"
+                  class="offer__arrow-icon"
                   width="50"
                   height="40"
                   viewBox="0 0 50 40"
@@ -263,18 +260,18 @@
                   </div>
                 </div>
               </div>
-              <div class="offer-box">
-                <div class="box-title box-image-3">
+              <div class="offer__box">
+                <div class="offer__box-title offer__box-image-3">
                   <h3 class="stickers">Пирсинг</h3>
                 </div>  
-                <div class="box-info-arrow">
+                <div class="offer__box-info-arrow">
                   <div>
-                    <a href="price.html" class="offer-link-pirs">
-                    <p class="box-info">Прокол ушей детям</p>
+                    <a href="price.html" class="offer__link-pirs">
+                    <p class="offer__box-info">Прокалывание ушей</p>
                   </div>
                   <div>
                     <svg
-                  class="arrow-icon"
+                  class="offer__arrow-icon"
                   width="50"
                   height="40"
                   viewBox="0 0 50 40"
@@ -291,18 +288,18 @@
                   </div>
                 </div>
               </div>
-              <div class="offer-box">
-                <div class="box-title box-image-4">
+              <div class="offer__box">
+                <div class="offer__box-title offer__box-image-4">
                   <h3 class="stickers">Татуаж</h3>
                 </div>
-                <div class="box-info-arrow">
+                <div class="offer__box-info-arrow">
                     <div>
-                      <a href="./price.html" class="offer-link-tatu">
-                        <p class="box-info">Перманентный макияж</p>
+                      <a href="./price.html" class="offer__link-tatu">
+                        <p class="offer__box-info">Перманентный макияж</p>
                     </div>
                     <div>
                       <svg
-                  class="arrow-icon"
+                  class="offer__arrow-icon"
                   width="50"
                   height="40"
                   viewBox="0 0 50 40"
@@ -319,71 +316,70 @@
                     </div>
               </div>
             </div>
-      </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="footer-column">
-         <div class="column-1">
-           <h2>Услуги</h2>
-           <a href="./price.html"><h3>Косметология</h3></a>
-           <a href="./price.html"><h3>Массаж</h3></a>
-           <a href="./price.html"><h3>Пирсинг</h3></a>
-           <a href="./price.html"><h3>Татуаж</h3></a>
+          </div>
+          </div>
+      </div>  
+    </section>
+      <footer class="footer container">
+      <div class="footer__column">
+         <div class="footer__column-1">
+           <h2 class="footer__titles">Услуги</h2>
+           <a href="./price.html" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Косметология</h3></a>
+           <a href="./price.html" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Массаж</h3></a>
+           <a href="./price.html" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Пирсинг</h3></a>
+           <a href="./price.html" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Татуаж</h3></a>
          </div>
-         <div class="column-2">
-           <h2>Для клиентов</h2>
+         <div class="footer__column-2">
+           <h2 class="footer__titles">Для клиентов</h2>
            <a href="./price.html
-           "><h3>Цены на услуги</h3></a>
-           <a href=""><h3>Отзывы</h3></a>
-           <a href=""><h3>Сертификаты</h3></a>
+           " class="footer__titles-mini-link"><h3 class="footer__titles-mini">Цены на услуги</h3></a>
+           <a href="" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Отзывы</h3></a>
+           <a href="" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Сертификаты</h3></a>
          </div>
-         <div class="column-3">
-           <h2>Информация</h2>
-           <a href="https://www.instagram.com/kosmetolog_natalya_ov/"><h3>О специалисте</h3></a>
-           <a href="https://zen.yandex.ru/id/5e9eeb5f4365d108b6cf9177"><h3>Статьи</h3></a>
+         <div class="footer__column-3">
+           <h2 class="footer__titles">Информация</h2>
+           <a href="https://www.instagram.com/kosmetolog_natalya_ov/" class="footer__titles-mini-link"><h3 class="footer__titles-mini">О специалисте</h3></a>
+           <a href="https://zen.yandex.ru/id/5e9eeb5f4365d108b6cf9177" class="footer__titles-mini-link"><h3 class="footer__titles-mini">Статьи</h3></a>
          </div>
-         <div class="column-contact">
-            <div>
-              <p>Телефон</p>
-              <div class="footer-contact">
-                <a class="footer-contact-link" href="tel:+79689556471">8 (968) 955-64-71</a>
+         <div class="footer__column-contact">
+              <span class="footer__text">Телефон</span>
+              <div class="footer__contact">
+                <a class="footer__contact-link" href="tel:+79689556471">8 (968) 955-64-71</a>
+                
               </div>
-            </div>
-            <div>
               <a href="#" class="button-sign-up-link sign-up-open">
                 <button class="button-sign-up-footer">Запись на прием</button>
               </a>
-            </div>
          </div>
       </div>
       </footer>
-      <div class="last-line">
-      <div>
-        <p><a href="" class="last-line-about">
-          <span>&#169;</span> 2021. Все права защищены. <br> Наши сертификаты на
-          осуществление деятельности. <br> Патенты на использование технологий.
-        </p></a>
-      </div>
-      <div>
-        <p> <a href="" class="last-line-politic"> Политика конфиденциальности </a> </p>
-      </div>
-      <div class="last-line-social">
+      <div class="last-line container">
+        <div class="last-line__span">
+        <span class="last-line__about"><a href="#" class="last-line__about-link">
+          <span>&#169;</span> 2021. Все права защищены. <br> Cертификаты для
+          ведения  деятельности. Патенты на использование технологий.
+          </a>
+        </span>
+        <span class="last-line__politic"><a href="" class="last-line__politic-link"> 
+          Политика конфиденциальности 
+        </a> </span>
+        </div>
+      <div class="last-line__social">
         <a
-          class="contacts-link"
+          class="last-line__contacts-link"
           href="https://www.instagram.com/kosmetolog_natalya_ov/"
           ><img src="./img/instagram.png" alt="instagram"
         /></a>
         <a
-          class="contacts-link"
+          class="last-line__contacts-link"
           href="https://zen.yandex.ru/id/5e9eeb5f4365d108b6cf9177"
           ><img src="./img/zen.png" alt="zen"
         /></a>
-        <a class="contacts-link" href="https://t.me/NATALY_KOSMO"
+        <a class="last-line__contacts-link" href="https://t.me/NATALY_KOSMO"
           ><img src="./img/telegram.png" alt="telegram"
         /></a>
         <a
-          class="contacts-link"
+          class="last-line__contacts-link"
           href="https://www.youtube.com/channel/UCDev7aqW8ThJGYkNooW5C5A"
           ><img src="./img/youtube.png" alt="youtube"
         /></a>

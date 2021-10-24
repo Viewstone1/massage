@@ -4,6 +4,7 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   centeredSlides: true,
+  margin: 0,
 
   // Navigation arrows
   navigation: {
